@@ -1,10 +1,11 @@
 {
-    "files.exclude": {
-        "**/.classpath": true,
-        "**/.project": true,
-        "**/.settings": true,
-        "**/.factorypath": true
-    },
-    "java.compile.nullAnalysis.mode": "disabled",
-    "java.configuration.updateBuildConfiguration": "automatic"
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "java.compile.nullAnalysis.mode": "disabled",
+  "java.configuration.updateBuildConfiguration": "automatic",
+  "cSpell.words": ["fhir", "hapi", "jdbc"]
 }
