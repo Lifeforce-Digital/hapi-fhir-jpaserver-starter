@@ -10,6 +10,8 @@ services:
         target: /app/config/application.yaml
     depends_on:
       - db
+    networks:
+      - hapi-starter
 
   db:
     image: postgres
@@ -20,7 +22,12 @@ services:
       POSTGRES_DB: hapi
     volumes:
       - ./hapi.postgres.data:/var/lib/postgresql/data
+    networks:
+      - hapi-starter
 
 configs:
   hapi:
      file: ./hapi.application.yaml
+
+networks:
+  hapi-starter:
